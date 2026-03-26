@@ -11,13 +11,13 @@
   <body>
     <header id="site-header">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
+  <div class="container">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
+      <div class="navbar-nav ms-auto">
         <a class="nav-link" href="#chi-siamo">Chi siamo</a>
         <a class="nav-link" href="#servizi">Servizi</a>
         <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -27,6 +27,24 @@
   </div>
 </nav>
     </header>
+    <main id="site-content">
+      <section id="hero" class="w-100 py-5 bg-secondary">
+        <div class="container py-5">
+          <div class="row px-3 flex-column-reverse flex-lg-row">
+            <div class="col-12 col-lg-6">
+                <h1>Titolo Grande</h1>
+                <hr>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sunt itaque harum ab explicabo impedit.</p>
+                <a href="#contatti" class="btn btn-primary">Clicca qui</a>
+            </div>
+            <div class="col-12 col-lg-6">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/5z2Mm-29FkE?si=RPvuUmLEXftXQPO1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
