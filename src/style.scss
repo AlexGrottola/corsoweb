@@ -6,12 +6,29 @@ $background: rgb(251, 251, 254);
 $primary: rgb(47, 39, 206);
 $secondary: rgb(222, 220, 255);
 $accent: rgb(67, 59, 255);
+$grays: ();
 
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";
 
 @import "bootstrap/scss/mixins";
+
+$colors: map-remove(
+  $colors,
+  "purple",
+  "pink",
+  "red",
+  "orange",
+  "teal",
+  "cyan",
+  "yellow",
+  "green",
+  "gray",
+  "black",
+  "blue",
+  "white"
+);
 
 $theme-colors: (
   "primary": $primary,
@@ -28,7 +45,10 @@ $utilities: map-remove(
   "opacity",
   "overflow",
   "shadow",
-  "position"
+  "position",
+  "text-emphasis",
+  "link",
+  "text"
 );
 
 // Layout & components
